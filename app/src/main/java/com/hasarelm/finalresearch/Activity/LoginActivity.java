@@ -17,6 +17,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     private TextInputEditText mEtUserName, mEtPassword;
     private TextView mTvForgetPassword, mTvSignUp;
     private LinearLayout mLvLogin;
+    private String tet;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
