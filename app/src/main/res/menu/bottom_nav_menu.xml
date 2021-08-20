@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:title="@string/home"
+        android:icon="@drawable/ic_baseline_home_24"/>
+    <item
+        android:id="@+id/add_farmer"
+        android:title="@string/add_farmer"
+        android:icon="@drawable/ic_baseline_person_add_24"/>
+    <item
+        android:id="@+id/farmer_list"
+        android:title="@string/farmer_list"
+        android:icon="@drawable/ic_baseline_people_24"/>
+    <item
+        android:id="@+id/settings"
+        android:title="@string/settings"
+        android:icon="@drawable/ic_baseline_settings_24"/>
+</menu>

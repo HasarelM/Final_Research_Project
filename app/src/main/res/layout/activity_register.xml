@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.RegisterActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:id="@+id/register_activity_lv"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="@color/black"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/ic_baseline_arrow_back_24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginTop="16dp"
+                    android:textStyle="bold"
+                    android:text="Back"
+                    android:layout_marginStart="2dp"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="150dp"
+                android:layout_marginEnd="35sp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="@string/create_account"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:text="@string/please_sign_up_to_continue"
+                android:layout_marginStart="35sp"
+                android:textStyle="bold"
+                android:layout_marginEnd="35sp"
+                android:textColor="#A4A4A4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35sp"
+                android:layout_marginTop="40sp"
+                android:layout_marginEnd="35sp"
+                app:cardCornerRadius="5sp"
+                app:cardElevation="4dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/activity_register_user_name"
+                        android:layout_width="match_parent"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:drawableStart="@drawable/ic_baseline_person_24"
+                        android:drawablePadding="5sp"
+                        android:hint="@string/name_with_initials"
+                        android:textSize="12sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginEnd="35sp"
+                app:cardCornerRadius="5sp"
+                app:cardElevation="4dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/activity_register_user_nic"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:background="@color/white"
+                        android:drawableStart="@drawable/ic_baseline_perm_contact_calendar_24"
+                        android:drawablePadding="5sp"
+                        android:hint="@string/nic"
+                        android:textSize="12sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginEnd="35sp"
+                app:cardCornerRadius="5sp"
+                app:cardElevation="4dp">
+
+               <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                   android:id="@+id/activity_register_sp_province"
+                   android:layout_width="match_parent"
+                   app:hintText="Select Province"
+                   android:paddingBottom="5dp"
+                   android:paddingTop="5dp"
+                   android:layout_height="match_parent"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginEnd="35sp"
+                app:cardCornerRadius="5sp"
+                app:cardElevation="4dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/activity_register_user_mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:drawableStart="@drawable/ic_baseline_phone_android_24"
+                        android:drawablePadding="5sp"
+                        android:hint="@string/mobile_number_07xxxxxxxx"
+                        android:textSize="12sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginEnd="35sp"
+                app:cardCornerRadius="5sp"
+                app:cardElevation="4dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/activity_register_user_emp_ID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:drawableStart="@drawable/ic_baseline_perm_contact_calendar_24"
+                        android:drawablePadding="5sp"
+                        android:hint="@string/employee_id"
+                        android:textSize="12sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginEnd="35sp"
+                app:cardCornerRadius="5sp"
+                app:cardElevation="4dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/activity_register_user_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:drawableStart="@drawable/ic_baseline_email_24"
+                        android:drawablePadding="5sp"
+                        android:hint="@string/email"
+                        android:textSize="12sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginEnd="35sp"
+                app:cardCornerRadius="5sp"
+                app:cardElevation="4dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/activity_register_user_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:drawableStart="@drawable/ic_baseline_lock_24"
+                        android:drawablePadding="5sp"
+                        android:hint="@string/password"
+                        android:textSize="12sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginEnd="35sp"
+                app:cardCornerRadius="5sp"
+                app:cardElevation="4dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/activity_register_user_c_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:drawableStart="@drawable/ic_baseline_lock_24"
+                        android:drawablePadding="5sp"
+                        android:hint="@string/confirm_password"
+                        android:textSize="12sp"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/activity_register_sign_up_click"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="225sp"
+                android:layout_marginTop="45sp"
+                android:layout_marginEnd="35sp"
+                android:background="@drawable/button_background"
+                android:orientation="horizontal"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight=".5"
+                    android:text="@string/sign_up"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/ic_baseline_arrow_forward_24" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="65dp"
+                android:layout_gravity="center|bottom"
+                android:gravity="center|bottom"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="20sp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25sp"
+                    android:text="@string/already_have_an_account"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/activity_register_tv_sign_in"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="25sp"
+                    android:textColor="@color/button_three"
+                    android:text="@string/sign_in"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
